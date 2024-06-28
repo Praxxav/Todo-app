@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // Replace with your MongoDB connection string with the database name included
-mongoose.connect("mongodb+srv://pranavkulkarni779:Pranav%409@cluster0.qhi9eub.mongodb.net/your-database-name", {
+mongoose.connect("mongodb+srv://pranavkulkarni779:Pranav%409@cluster0.qhi9eub.mongodb.net/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -12,7 +12,7 @@ const todoSchema = mongoose.Schema({
   completed: Boolean,
 });
 
-const Todo = mongoose.model('Todo', todoSchema); // 'Todo' should be the model name, not 'todos'. Also, use 'todoSchema' variable.
+const Todo = mongoose.model('Todo', todoSchema); 
 
 module.exports = {
   todo: Todo
