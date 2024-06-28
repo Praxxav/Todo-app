@@ -8,8 +8,8 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors({
     origin: "https://todo-app-frontend-psi.vercel.app",
-    methods: ["POST", "GET", "PUT"],
-    credentials: true
+    methods: ["POST", "GET", "PUT"]
+    
 }));
 
 // Handle OPTIONS requests for CORS preflight
