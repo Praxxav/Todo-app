@@ -6,7 +6,11 @@ const app = express();
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ["https://todo-app-frontend-psi.vercel.app/"],
+    method: ["post","get","Put",],
+    credentials: true
+}));
 
 app.post("/todo", async function(req, res) {
     const createpayload = req.body;
