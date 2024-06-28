@@ -9,7 +9,7 @@ import { Todos } from './components/Todos'
 function App() {
   const [todos, setTodos] = useState([]);
 
-  // fetch("http://localhost:3000/todos")
+  // fetch("https://todo-app-api-delta.vercel.app/")
   //   .then(async function(res) {
   //     const json = await res.json();
   //     setTodos(json.todos);
