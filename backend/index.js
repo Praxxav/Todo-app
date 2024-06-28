@@ -7,6 +7,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({
+    origin:["https://todo-app-api-delta.vercel.app/"]
     methods: ["POST", "GET", "PUT"]
     
 }));
