@@ -19,7 +19,7 @@ export function Createtodo() {
         }
 
         try {
-            const response = await fetch("http://localhost:3000/todo", {
+            const response = await fetch("https://todo-app-api-delta.vercel.app/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
